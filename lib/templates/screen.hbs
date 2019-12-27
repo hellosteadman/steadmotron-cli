@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./screen.css">
+    </head>
+    <body>
+        Loading...<br>
+        <script src="./game.js"></script>
+        <script>
+            document.body.innerHTML = window.game.title.toUpperCase() + '<br><br>';
+            window.game.play('browser').then(
+                function() {
+                    console.info('Game loaded');
+                }
+            ).catch(
+                function(err) {
+                    document.write('APPLICATION ERROR<br>' + err);
+                    console.error(err);
+                }
+            );
+        </script>
+    </body>
+</html>
