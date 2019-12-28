@@ -1,7 +1,0 @@
-@font-face {
-    font-family: 'commodore64';
-    src: url('screen.woff2') format('woff2'),
-        url('screen.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
